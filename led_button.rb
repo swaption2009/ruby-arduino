@@ -14,12 +14,12 @@ led.send(:off)
 # Specifies what message is to be sent on a particular user's event. (Here, pressing up and down the button).
 # ------------
 button.down do
-  puts "button not pressed"
+  puts 'button not pressed'
   led.send(:off)
 end
 
 button.up do
-  puts "button pressed"
+  puts 'button pressed'
   led.send(:on)
 end
 
