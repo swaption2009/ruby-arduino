@@ -6,7 +6,7 @@ require 'dino'
 # Setup the hardware with their pins specified.
 board = Dino::Board.new(Dino::TxRx::Serial.new)
 button = Dino::Components::Button.new(pin: 'A0', board: board)
-led = Dino::Components::Led.new(pin: 1, board: board)
+led = Dino::Components::Led.new(pin: 13, board: board)
 
 # Initially set the led off.
 led.send(:off)
